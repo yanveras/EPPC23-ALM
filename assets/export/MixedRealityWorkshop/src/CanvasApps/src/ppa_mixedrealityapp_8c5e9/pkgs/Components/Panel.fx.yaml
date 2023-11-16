@@ -225,22 +225,30 @@ Panel As CanvasComponent:
                 X: =20
                 ZIndex: =5
 
-                Button1 As Button:
+                Button1 As Botão:
                     Alignment: ="center"
                     BorderColor: =
                     BorderRadius: =0
                     BorderStyle: =""
                     BorderThickness: =0
                     ButtonType: =ThisItem.ButtonType
+                    DisabledBorderColor: =
+                    DisabledFillColor: =
+                    DisabledTextColor: =
                     DisplayMode: =DisplayMode.Edit
                     FillColor: =If(ThisItem.ButtonType = 'Button.ButtonType'.Primary, ColorValue(Panel.Theme.palette.themePrimary))
                     Height: =32
                     HideFromAssistiveTechnologies: =false
+                    HoverBorderColor: =
                     HoverFillColor: =If(ThisItem.ButtonType = 'Button.ButtonType'.Primary, ColorValue(Panel.Theme.palette.themeDark))
+                    HoverTextColor: =
                     Italic: =false
                     OnSelect: =Panel.OnButtonSelect()
                     PaddingBottom: =0
                     PaddingTop: =0
+                    PressedBorderColor: =
+                    PressedFillColor: =
+                    PressedTextColor: =
                     Strikethrough: =false
                     Text: =ThisItem.Label
                     TextColor: =If(ThisItem.ButtonType = 'Button.ButtonType'.Primary, ColorValue(Panel.Theme.palette.white))

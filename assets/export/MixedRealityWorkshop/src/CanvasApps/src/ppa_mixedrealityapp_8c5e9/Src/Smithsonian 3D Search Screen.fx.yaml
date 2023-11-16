@@ -38,7 +38,20 @@
     galSearch As gallery.galleryVertical:
         Height: =866 
         Items: |-
-            =Filter(Smithsonian3D.FileSearch({q: sbSmithsonian.SearchText, start: 0, rows: 100, quality: "High", file_type: "glb"}).rows, ThisRecord.content.quality = "High", ThisRecord.content.file_type = "glb", !IsBlank(ThisRecord.title))
+            =Filter(
+                Smithsonian3D.FileSearch(
+                    {
+                        q: sbSmithsonian.SearchText,
+                        start: 0,
+                        rows: 100,
+                        quality: "High",
+                        file_type: "glb"
+                    }
+                ).rows,
+                ThisRecord.content.quality = "High",
+                ThisRecord.content.file_type = "glb",
+                !IsBlank(ThisRecord.title)
+            )
         Layout: =Layout.Vertical
         TemplateSize: =60
         Y: =270

@@ -13,6 +13,21 @@
     "OverridableProperties": {},
     "Version": "1.0"
   },
+  "Botão": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/powercontrol/Microsoft_CoreControls_Button",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": true,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "Microsoft_CoreControls_Button",
+    "OverridableProperties": {},
+    "TemplateDisplayName": "Botão",
+    "Version": "1.5.2"
+  },
   "button": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
@@ -27,20 +42,84 @@
     "OverridableProperties": {},
     "Version": "2.2.0"
   },
-  "Button": {
+  "circle": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/powercontrol/Microsoft_CoreControls_Button",
+    "Id": "http://microsoft.com/appmagic/shapes/circle",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": false,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": true,
+    "LastModifiedTimestamp": "0",
+    "Name": "circle",
+    "OverridableProperties": {},
+    "Version": "2.3.0"
+  },
+  "Exibir em 3D (versão preliminar)": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/powercontrol/ViewIn3D",
     "IsComponentTemplate": false,
     "IsCustomGroupControlTemplate": false,
     "IsPcfControl": true,
     "IsPremiumPcfControl": false,
     "IsWidgetTemplate": false,
     "LastModifiedTimestamp": "0",
-    "Name": "Microsoft_CoreControls_Button",
+    "Name": "ViewIn3D",
     "OverridableProperties": {},
-    "TemplateDisplayName": "Button",
-    "Version": "1.5.2"
+    "TemplateDisplayName": "Exibir em 3D (versão preliminar)",
+    "Version": "1.2.22"
+  },
+  "Exibir em RM (versão preliminar)": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/powercontrol/ViewInMR",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": true,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "ViewInMR",
+    "OverridableProperties": {
+      "Photos": {
+        "Type": {
+          "EnumString": "",
+          "Kind": "Table",
+          "Name": "Root",
+          "Type": [
+            {
+              "EnumString": "",
+              "Kind": "Number",
+              "Name": "FileSize",
+              "Type": []
+            },
+            {
+              "EnumString": "",
+              "Kind": "Image",
+              "Name": "ImageURI",
+              "Type": []
+            },
+            {
+              "EnumString": "",
+              "Kind": "String",
+              "Name": "MimeType",
+              "Type": []
+            }
+          ]
+        },
+        "Version": "1.335"
+      }
+    },
+    "PCFDynamicSchemaForIRRetrieval": {
+      "Photos": {
+        "DynamicSchema": "{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"ImageURI\":{\"type\":\"string\",\"format\":\"uri\",\"x-ms-media-kind\":\"image\"},\"MimeType\":{\"type\":\"string\"},\"FileSize\":{\"type\":\"number\"}}}}",
+        "PCFSkipValidation": false
+      }
+    },
+    "TemplateDisplayName": "Exibir em RM (versão preliminar)",
+    "Version": "1.0.29"
   },
   "gallery": {
     "CustomGroupControlTemplateName": "",
@@ -97,7 +176,7 @@
     "LastModifiedTimestamp": "0",
     "Name": "hostControl",
     "OverridableProperties": {},
-    "Version": "1.5.4"
+    "Version": "1.6.0"
   },
   "htmlViewer": {
     "CustomGroupControlTemplateName": "",
@@ -155,21 +234,6 @@
     "OverridableProperties": {},
     "Version": "2.5.1"
   },
-  "Label": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/powercontrol/Microsoft_CoreControls_Label",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": true,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": false,
-    "LastModifiedTimestamp": "0",
-    "Name": "Microsoft_CoreControls_Label",
-    "OverridableProperties": {},
-    "TemplateDisplayName": "Label",
-    "Version": "1.6.0"
-  },
   "rectangle": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
@@ -183,6 +247,21 @@
     "Name": "rectangle",
     "OverridableProperties": {},
     "Version": "2.3.0"
+  },
+  "Rótulo": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/powercontrol/Microsoft_CoreControls_Label",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": true,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "Microsoft_CoreControls_Label",
+    "OverridableProperties": {},
+    "TemplateDisplayName": "Rótulo",
+    "Version": "1.6.0"
   },
   "screen": {
     "CustomGroupControlTemplateName": "",
@@ -211,70 +290,5 @@
     "Name": "text",
     "OverridableProperties": {},
     "Version": "2.3.2"
-  },
-  "View in 3D (preview)": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/powercontrol/ViewIn3D",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": true,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": false,
-    "LastModifiedTimestamp": "0",
-    "Name": "ViewIn3D",
-    "OverridableProperties": {},
-    "TemplateDisplayName": "View in 3D (preview)",
-    "Version": "1.2.22"
-  },
-  "View in MR (preview)": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/powercontrol/ViewInMR",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": true,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": false,
-    "LastModifiedTimestamp": "0",
-    "Name": "ViewInMR",
-    "OverridableProperties": {
-      "Photos": {
-        "Type": {
-          "EnumString": "",
-          "Kind": "Table",
-          "Name": "Root",
-          "Type": [
-            {
-              "EnumString": "",
-              "Kind": "Number",
-              "Name": "FileSize",
-              "Type": []
-            },
-            {
-              "EnumString": "",
-              "Kind": "Image",
-              "Name": "ImageURI",
-              "Type": []
-            },
-            {
-              "EnumString": "",
-              "Kind": "String",
-              "Name": "MimeType",
-              "Type": []
-            }
-          ]
-        },
-        "Version": "1.332"
-      }
-    },
-    "PCFDynamicSchemaForIRRetrieval": {
-      "Photos": {
-        "DynamicSchema": "{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"ImageURI\":{\"type\":\"string\",\"format\":\"uri\",\"x-ms-media-kind\":\"image\"},\"MimeType\":{\"type\":\"string\"},\"FileSize\":{\"type\":\"number\"}}}}",
-        "PCFSkipValidation": false
-      }
-    },
-    "TemplateDisplayName": "View in MR (preview)",
-    "Version": "1.0.29"
   }
 }
