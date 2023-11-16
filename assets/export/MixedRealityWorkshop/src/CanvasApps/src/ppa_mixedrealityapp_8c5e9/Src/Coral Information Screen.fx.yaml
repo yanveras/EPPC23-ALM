@@ -46,17 +46,17 @@
         Y: =732
         ZIndex: =4
 
-    "'3dCoral' As 'View in 3D (preview)'.pcfdataset":
+    "'3dCoral' As 'Exibir em 3D (versão preliminar)'.pcfdataset":
         BackgroundFill: =Color.Transparent
         DisplayMode: =DisplayMode.Edit
         Height: =536
         Source: =galCoralGallery.Selected.'3DModel'
         Width: =561
-        X: =40
-        Y: =95
+        X: =46
+        Y: =94
         ZIndex: =5
 
-    "mrCoral As 'View in MR (preview)'.pcfdataset":
+    "mrCoral As 'Exibir em RM (versão preliminar)'.pcfdataset":
         BorderFillColor: =RGBA(47, 81, 151, 1)
         BorderRadius: =50
         BorderThickness: =0
